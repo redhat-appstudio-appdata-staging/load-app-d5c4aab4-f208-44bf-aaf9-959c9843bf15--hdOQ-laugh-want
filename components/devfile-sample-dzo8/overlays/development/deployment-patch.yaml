@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dzo8
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-33-tenant/load-app-d5c4aab4-f208-44bf-aaf9-959c9843bf15/devfile-sample-dzo8@sha256:92d3afb92bd5c74da5e03b6c8a4da47985c47e8315122a5229ee0813164d7a80
+        name: my-nodejs
+        resources: {}
+status: {}
